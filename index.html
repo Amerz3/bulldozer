@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulldozer Buffet</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #222;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px 0 5px;
+      font-size: 28px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    form {
+      background-color: #111;
+      padding: 20px;
+      margin: 30px auto;
+      width: 350px;
+      border-radius: 10px;
+    }
+    input, textarea, select {
+      width: 95%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #222;
+      color: white;
+      direction: rtl;
+    }
+    input::placeholder, textarea::placeholder {
+      text-align: right;
+    }
+    button[type="submit"] {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #444;
+      color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    #responseMessage {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>☕ Bulldozer Buffet</h1>
+<div class="subtitle">by Amer Zayed</div>
+
+<form action="https://usebasin.com/f/9118b45452f8" method="POST">
+  <h2>طلبك</h2>
+  <input type="text" name="name" placeholder="الاسم" required>
+  <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+  
+  <label for="drink">اختيار المشروب:</label>
+  <select name="drink" id="drink" required>
+    <option value="" disabled selected>اختر مشروباً</option>
+    <option value="قهوة تركي">قهوة تركي</option>
+    <option value="كابتشينو">كابتشينو</option>
+    <option value="نسكافيه">نسكافيه</option>
+    <option value="قهوة جولد">قهوة جولد</option>
+    <option value="شاي كرك">شاي كرك</option>
+    <option value="شاي أخضر">شاي أخضر</option>
+    <option value="شاي أحمر">شاي أحمر</option>
+    <option value="بابونج">بابونج</option>
+    <option value="زهورات">زهورات</option>
+    <option value="يانسون">يانسون</option>
+  </select>
+
+  <label for="sweet">اختيار السكاكر:</label>
+  <select name="sweet" id="sweet" required>
+    <option value="" disabled selected>اختر نوع سكاكر</option>
+    <option value="بسكويت">بسكويت</option>
+    <option value="معمول">معمول</option>
+    <option value="كيك">كيك</option>
+    <option value="شوكولاتة">شوكولاتة</option>
+    <option value="شوفان">شوفان</option>
+  </select>
+
+  <textarea name="notes" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+  <button type="submit">إرسال الطلب</button>
+</form>
+
+<footer>
+  📍 الطلبات متاحة داخل البوفيه فقط | للاستفسار: 0791909760
+</footer>
+
+</body>
+</html>
